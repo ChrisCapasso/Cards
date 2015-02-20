@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cards</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<%= render 'shared/header' %>
+	<% if flash[:notice] %>
+	<%= content_tag :p, notice, id: :notice %>
+	<% end %>
+    <% if flash[:alert] %>
+    <%= content_tag :p, alert, id: :alert %>
+    <% end %>
+
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<header>
+	<nav>
+		<% if user_signed_in? %>
+			<%= link_to 'sign out', destroy_user_session_path, method: :delete %> 
+				<% unless @onprojects %>
+			| <%= link_to 'projects', projects_path %>
+				<% else %>
+			| <%= link_to 'new project', projects_path, method: :post, class: :button %>	
+
+				<% end %>
+					
+				<% if @project %>
+				|<%= link_to 'add card', project_cards_path(@project), method: :post, remote: true, class: :button %>
+				<%end%>
+
+		<% else %>
+				<%= link_to 'sign in', new_user_session_path, class: :button %> |
+				<%= link_to 'sign up', new_user_registration_path, class: :button %>
+		<% end %>
+	</nav>	
+		<h1>
+		<% if user_signed_in? and @project %>
+		<%= best_in_place @project, :title,
+									as: :input,
+									placeholder: "Click to add title!" %></h1>
+		<% elsif user_signed_in? %>
+		<h1><%="Welcome #{current_user.name}" %></h1>
+		<% else %>
+		<h1>Welcome</h1>
+		<% end %>
+
+</header>

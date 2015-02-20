@@ -1,0 +1,229 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+ 
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+ 
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+.delete-item {
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	color: #CCC;
+}
+
+ 
+a {
+  color: #000;
+  &:visited {
+    color: #666;
+  }
+}
+ 
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+ 
+#notice {
+  color: green;
+  padding: .5em 1em;
+  border-bottom: 1px solid green;
+  background-color: #EBFAEB;
+  margin-top: 0px;
+}
+ 
+#alert {
+  color: #FF9900;
+  padding: .5em 1em;
+  border-bottom: 1px solid #FF9900;
+  background-color: #FFFFD6;
+  margin-top: 0px;
+}
+ 
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+ 
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+.card {
+	width: 450px;
+	margin: 1em;
+	box-shadow: 4px 4px 6px #888888;
+	border: 1px solid #CCC;
+	height: 270px;
+	float: left;
+	background-color: #fff;
+	background-image: linear-gradient(#eee .1em, transparent .1em);
+	background-size: 100% 1.4em;
+}
+ 
+.card p, h3 { margin: 1em;}
+ 
+.header {
+	border-bottom: 1px solid #FF5C5C;
+	background-color: #FFF;
+}
+ 
+.header .nav {
+	float: right;
+	margin-right: 1em;
+	font-weight: bold;
+	font-size: 24px;
+}
+ 
+.header .nav a {
+	text-decoration: none;
+	color: white;
+}
+ 
+.header .nav a:hover {
+	color: #CCC;
+}
+ 
+h3 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 18px;
+}
+ 
+h3 a {
+	text-decoration: none;
+}
+ 
+.card p {
+	padding-top: 6px;
+	font-family: courier;
+	font-size: 15px;
+	line-height: 1.2em;
+	height: 180px;
+	overflow: scroll;
+}
+ 
+#board {
+	padding-top: 1em;
+}
+ 
+h1 input {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0px;
+}
+ 
+h3 input {
+    border: 1px solid white; 
+    padding: 2px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 16px;
+    width: 90%;
+}
+ 
+span textarea {
+    padding-top: 5px;
+    font-family: courier;
+    font-size: 15px;
+    line-height: 1.28em;
+    width: 98%;
+    height: 170px;
+    background-image: linear-gradient(#eee .1em, transparent .1em);
+	background-size: 100% 1.3em;
+}
+
+nav {
+	float: right;
+	padding-right: 1em;
+}
+ 
+header { 
+	border-bottom: 1px solid #CCC;
+	padding-left: 1em;
+}
+ 
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:14px;
+	font-weight:normal;
+	font-style:normal;
+	height:26px;
+	line-height:26px;
+	width:88px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}
+
+.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}
+
+.button:active {
+	position:relative;
+	top:1px;
+}

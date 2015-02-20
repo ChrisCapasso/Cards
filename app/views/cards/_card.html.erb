@@ -1,0 +1,9 @@
+<%= content_tag_for :div, card do %>
+		<div class="header">
+			<div class="nav">
+				<%= link_to "X", card_path(card), method: :delete, remote: true %>
+			</div>
+			<h3><%= best_in_place card, :title, as: :input, placeholder: "Click me to add title!" %></h3>
+			</div>
+			<p><%= best_in_place card, :body, as: :textarea, placeholder: "Click me to add title!" %></p>
+	<% end %>
